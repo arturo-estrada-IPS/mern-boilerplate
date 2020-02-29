@@ -1,0 +1,24 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "module": "commonjs",
+    "lib": [
+      "ES6",
+      "ES5",
+      "DOM"
+    ],
+    "jsx": "react",
+    "sourceMap": true,
+    "allowJs": true,
+    "checkJs": true,
+    "outDir": "./dist/",
+    "rootDir": "./",
+    "importHelpers": true,
+    "strict": true,
+    "alwaysStrict": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true
+  }
+}

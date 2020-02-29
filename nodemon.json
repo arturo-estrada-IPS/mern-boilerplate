@@ -1,0 +1,18 @@
+{
+  "watch": [
+    "server"
+  ],
+  "ext": ".ts,.js",
+  "ignore": [
+    "client/*",
+    ".editorconfig",
+    ".eslint.json",
+    ".gitignore",
+    "tsconfig.json",
+    "*.test.js",
+    "*.test.ts",
+    "*.spec.js",
+    "*.spec.ts"
+  ],
+  "exec": "node --inspect -r ts-node/register ./server/index.ts"
+}
