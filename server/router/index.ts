@@ -1,12 +1,24 @@
 import { Router } from 'express';
-import { hello, postHello } from '../handlers/helloWorld.handler';
+import {
+  listBooks,
+  readBook,
+  editBook,
+  addBook,
+  find
+} from '../handlers/helloWorld.handler';
 
 export default function Routes(): Router {
   const router = Router();
 
+  router.use('/:bookId', find);
+
   router.route('/')
-    .get(hello)
-    .post(postHello);
+    .get(listBooks)
+    .post(addBook);
+
+  router.route('/:bookId')
+    .put(editBook)
+    .get(readBook);
 
   return router;
 }

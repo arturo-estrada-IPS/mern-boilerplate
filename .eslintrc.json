@@ -35,7 +35,9 @@
     "object-curly-newline": "off",
     "max-len": "off",
     "comma-dangle": "off",
-    "react/jsx-filename-extension": "off"
+    "react/jsx-filename-extension": "off",
+    "class-methods-use-this": "off",
+    "no-useless-catch": "off"
   },
   "settings": {
     "import/resolver": {
