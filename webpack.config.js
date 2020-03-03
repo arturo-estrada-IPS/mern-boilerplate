@@ -81,6 +81,14 @@ module.exports = {
             }
           }
         ]
+      },
+      {
+        test: /\.(ttf|eot|otf|svg|png)$/,
+        loader: 'file-loader?emitFile=false'
+      },
+      {
+        test: /\.(woff|woff2)$/,
+        loader: 'url-loader?emitFile=false'
       }
     ]
   },
