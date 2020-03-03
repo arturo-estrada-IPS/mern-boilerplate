@@ -38,7 +38,7 @@ export const editBook = (req: Request | any, res: Response) => {
 
   book.save()
     .then((result: any) => res.json(result))
-    .then((err: any) => res.status(500).send(err));
+    .catch((err: any) => res.status(500).send(err));
 };
 
 export const find = (req: Request | any, res: Response, next: NextFunction) => {
