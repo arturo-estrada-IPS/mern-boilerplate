@@ -2,8 +2,9 @@
 import { Request, Response, NextFunction } from 'express';
 import Book from '../models/bookModel';
 
-export const listBooks = (_req: Request, res: Response) => {
-  Book.find((err, data) => {
+export const listBooks = (req: Request, res: Response) => {
+  const query = req.query || '';
+  Book.find(query, (err, data) => {
     if (err) return res.status(500).send(err);
     return res.status(200).send(data);
   });
